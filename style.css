@@ -1,0 +1,305 @@
+html, body {
+  background-color: #000;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.horizontal-center {
+  margin: auto;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  color: grey;
+  padding: 10px;
+  line-height: 24px;
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  color: black;
+}
+
+.username-selection {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.region-selection {
+  padding-bottom: 30px;
+}
+
+.results, .usability {
+  padding-bottom: 30px;
+}
+
+h3 {
+  color: #FFFFFF;
+}
+
+.gray {
+  color: #D3D3D3;
+}
+
+#lookup {
+  background-color: #FFFFFF;
+  border: none;
+  height: 48px;
+  width: 100px;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#lookup:hover {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+
+#message {
+  color: #FF0000;
+}
+
+ul.region-selection {
+    list-style: none;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.region-selection li {
+  display: inline;
+  padding: 10px 16px;
+  color: #FFFFFF;
+}
+
+.region-selection li a {
+  display: inline-block;
+  padding: 10px;
+}
+
+.region-selection li:hover {
+  cursor: pointer;
+    border: 1px solid #006400;
+}
+
+.region-selection .selected {
+  background-color: #006400;
+}
+
+#win {
+  padding-top: 20px;
+  height: 50px;
+  width: 60%;
+  margin: auto;
+}
+
+#left, #right {
+  display: inline-block;
+  width: 45%;
+  height: 100%;
+
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+#footer {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  color: #FFFFFF;
+}
+
+/* graph */
+
+#chart {
+  display: none;
+}
+
+.champ{
+  width: 50px;
+  height: 50px;
+}
+
+/* Containers */
+
+#wrapper {
+  height: 480px;
+  left: 50%;
+  margin: auto;
+  top: 50%;
+  width: 800px;
+}
+
+.figure {
+  height: 435px;
+  position: relative;
+}
+
+.figure ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.graph {
+  height: 100%;
+  position: relative;
+}
+
+/* Legend */
+
+.legend {
+  background: #000000;
+  border-radius: 4px;
+  bottom: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.legend li {
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0;
+  padding: 10px 30px;
+  width: 120px;
+}
+
+.legend span.icon {
+  background-position: 50% 0;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  height: 16px;
+  margin: 2px 10px 0 0;
+  width: 16px;
+}
+
+/* x-axis */
+
+.x-axis {
+  top: 250px;
+  color: #555;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.x-axis li {
+  float: left;
+  margin: 0 15px;
+  padding: 5px 0;
+  width: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.requester {
+  border-bottom: 4px solid green;
+}
+
+/* y-axis */
+
+.y-axis {
+  color: #555;
+  position: absolute;
+  text-align: right;
+  width: 100%;
+}
+
+.y-axis li {
+  border-top: 1px solid #ccc;
+  display: block;
+  height: 62px;
+  width: 100%;
+}
+
+.y-axis li span {
+  display: block;
+  margin: -10px 0 0 -60px;
+  padding: 0 10px;
+  width: 40px;
+}
+
+/* Graph bars */
+
+.bars {
+  height: 253px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.bar-group {
+  float: left;
+  height: 100%;
+  margin: 0 15px;
+  position: relative;
+  width: 50px;
+}
+
+.bar {
+  border-radius: 3px 3px 0 0;
+  bottom: 0;
+  cursor: pointer;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  width: 24px;
+}
+
+.bar.enemy {
+  left: 12px;
+}
+
+
+.bar.ally {
+  left: 12px;
+}
+
+.bar span {
+  #fefefe url(../images/info-bg.gif) 0 100% repeat-x;
+  border-radius: 3px;
+  left: -8px;
+  display: none;
+  margin: 0;
+  position: relative;
+  text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+  width: 40px;
+  z-index: 20;
+
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+}
+
+.bar:hover span {
+  display: block;
+  margin-top: -25px;
+}
+
+.ally {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.0, #009fff), color-stop(0.49, #009fff), color-stop(0.5, #009fff), color-stop(1.0, #009fff));
+}
+
+.enemy {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.0, #FF0000), color-stop(0.49, #FF0000), color-stop(0.5, #FF0000), color-stop(1.0, #FF0000));
+}
