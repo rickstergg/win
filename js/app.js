@@ -362,6 +362,15 @@ function Graph() {
     graphTimer = setTimeout(function() {
       displayGraph(bars, 0);
     }, 200);
+
+    // Setup hover handler after the graph is displayed.
+    $('.bar').hover(function(){
+      $('.y-axis li').css('border-top', '1px solid black');
+      $('.mastery').css('border-bottom', '2px solid black');
+    }, function(){
+      $('.y-axis li').css('border-top', '1px solid white');
+      $('.mastery').css('border-bottom', '2px solid gold');
+    });
   }
 
   // Once it's all done, actually display the graph
