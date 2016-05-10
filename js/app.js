@@ -311,6 +311,7 @@ function Graph() {
   /* The series of appends creates a structure like this:
    * container
    *   figure container
+   *     legend
    *     graph container
    *       bar container
    *       x axis
