@@ -280,8 +280,22 @@ function Graph() {
   var chartLegend	= tableData.chartLegend();
   var legendList	= $('<ul class="legend"></ul>');
   $.each(chartLegend, function(i) {
-    var listItem = $('<li><span class="icon '+ this.toLowerCase() + '"></span>' + this + '</li>').appendTo(legendList);
+    var listItem = $('<li><span class="'+ this.toLowerCase() + '"></span>' + this + '</li>').appendTo(legendList);
   });
+
+  /* If the graph is higher than the possible mastery, then we can show it.
+   * Do that by setting the percentage, and displaying it from top.
+   * Add it to the legend as well.
+   */
+  if (chartYMax > 21600) {
+    var fullMasteryHeight = 21600 / chartYMax;
+    var pos = (1 - fullMasteryHeight) * 252;
+    var fullMastery = $('<div class="mastery"></div>');
+    fullMastery.css('top', pos);
+    fullMastery.appendTo(graphContainer);
+    $('<li><span class="masteryLegend"></span>Level 5 Mastery (21 600)</li>').appendTo(legendList);
+  }
+
   legendList.appendTo(figureContainer);
 
   /* For both x axis and y axis, create a literal that contains the label of each,

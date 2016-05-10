@@ -72,6 +72,13 @@ h3 {
   color: #FF0000;
 }
 
+.mastery {
+  z-index: 9001;
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid gold;
+}
+
 ul.region-selection {
     list-style: none;
     margin: 0;
@@ -184,7 +191,7 @@ ul.region-selection {
   width: 120px;
 }
 
-.legend span.icon {
+.legend span {
   background-position: 50% 0;
   border-radius: 2px;
   display: block;
@@ -271,7 +278,6 @@ ul.region-selection {
   left: 12px;
 }
 
-
 .bar.ally {
   left: 12px;
 }
@@ -294,6 +300,10 @@ ul.region-selection {
 .bar:hover span {
   display: block;
   margin-top: -25px;
+}
+
+.masteryLegend {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.0, gold), color-stop(0.49, gold), color-stop(0.5, gold), color-stop(1.0, gold));
 }
 
 .ally {
