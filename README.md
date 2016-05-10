@@ -45,5 +45,6 @@ Original design was for [WotD App](http://rickzhang.cool/). Salvaged most of the
 * Perhaps specific information about that champions summoners / runes would also be useful, but we also want to avoid becoming like lolnexus and stuff, let's not reinvent the wheel.
 * ~~Comment the code for increased readability, though if done well, it should speak for itself.~~
 * ~~Some people have a LOT of mastery points, we should mark the 25k points as level 5 mastery if the highest is above that, just for a landmark to be able to deduce the relative skill levels of players. This will just be a golden yellow line across the 21.6k y-axis point, signifying level 5 mastery emote unlocked. ;3~~
-* Tool tips for the champion name and the full summoner name.
+* ~~Tool tips for the champion name.~~
+* ~~Tool tips for summoner name.~~
 * To factor in the win rates of these players on that champion would be cool. That way 500k points doesn't mean much if your win rate is 40%. You have simply just played a lot.

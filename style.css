@@ -36,10 +36,6 @@ input[type="text"]:focus {
   padding-top: 30px;
 }
 
-.region-selection {
-  padding-bottom: 30px;
-}
-
 .results, .usability {
   padding-bottom: 30px;
 }
@@ -79,6 +75,12 @@ h3 {
   border-bottom: 2px solid gold;
 }
 
+/* Region selection */
+
+.region-selection {
+  padding-bottom: 30px;
+}
+
 ul.region-selection {
     list-style: none;
     margin: 0;
@@ -106,6 +108,8 @@ ul.region-selection {
   background-color: #006400;
 }
 
+/* Win portion styles */
+
 #win {
   padding-top: 20px;
   height: 50px;
@@ -126,6 +130,8 @@ ul.region-selection {
   text-align: center;
 }
 
+/* Required footer */
+
 #footer {
   padding-top: 20px;
   width: 80%;
@@ -137,11 +143,6 @@ ul.region-selection {
 
 #chart {
   display: none;
-}
-
-.champ{
-  width: 50px;
-  height: 50px;
 }
 
 /* Containers */
@@ -202,6 +203,11 @@ ul.region-selection {
 }
 
 /* x-axis */
+
+.champ{
+  width: 50px;
+  height: 50px;
+}
 
 .x-axis {
   top: 250px;

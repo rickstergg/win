@@ -51,7 +51,7 @@ function post(url, successCallback) {
  * Is dependent on the version, which is stored in the app as app.version. This is to ensure we have the latest images.
  */
 function getChampionImg(championID) {
-  return "<img class=\"champ\"src=http://ddragon.leagueoflegends.com/cdn/"+app.version+"/img/champion/"+app.champions[championID].image.full+" />";
+  return "<img class=\"champ\" title=\""+app.champions[championID].name+"\" src=http://ddragon.leagueoflegends.com/cdn/"+app.version+"/img/champion/"+app.champions[championID].image.full+" />";
 }
 
 /* getChampions
@@ -293,7 +293,7 @@ function Graph() {
     var fullMastery = $('<div class="mastery"></div>');
     fullMastery.css('top', pos);
     fullMastery.appendTo(graphContainer);
-    $('<li><span class="masteryLegend"></span>Level 5 Mastery (21 600)</li>').appendTo(legendList);
+    $('<li><span class="masteryLegend"></span>Rank 5 Mastery</li>').appendTo(legendList);
   }
 
   legendList.appendTo(figureContainer);
@@ -311,7 +311,7 @@ function Graph() {
   var xAxis = tableData.xAxis();
   var xAxisList = $('<ul class="x-axis"></ul>');
   $.each(xAxis, function(i) {
-    var listItem = $('<li><span>'+getChampionImg(this)+'</span><span class="playerName">'+playerList[i].summonerName+'</span></li>').appendTo(xAxisList);
+    var listItem = $('<li><span>'+getChampionImg(this)+'</span><span class="playerName" title="'+playerList[i].summonerName+'">'+playerList[i].summonerName+'</span></li>').appendTo(xAxisList);
     if(playerList[i].requester) {
       listItem.addClass('requester');
     }
