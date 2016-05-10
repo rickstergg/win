@@ -166,6 +166,12 @@ $( document ).ready(function() {
   });
 });
 
+/********     The Good Stuff     ********
+ *
+ * This is the stuff that makes up most of the app. I've separated the graph and the app because I felt
+ * they are simply two different things that make up a front end / back end kind of composition.
+ */
+
 /* Graph
  *
  * The graph pretty much creates elements and populates it using the data collected by the application.
@@ -177,7 +183,6 @@ function Graph() {
   var figureContainer = $('<div class="figure"></div>');
   var graphContainer = $('<div class="graph"></div>');
   var barContainer = $('<div class="bars"></div>');
-  var data = $('#data-table');
   var container = $('.chart');
   var chartData;
   var chartYMax;
