@@ -187,8 +187,8 @@ ul.region-selection {
   float: left;
   height: 20px;
   margin: 0;
-  padding: 10px 30px;
-  width: 120px;
+  padding: 10px 20px;
+  width: 150px;
 }
 
 .legend span {
@@ -253,7 +253,7 @@ ul.region-selection {
   height: 253px;
   position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 9002;
 }
 
 .bar-group {
