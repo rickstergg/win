@@ -21,7 +21,7 @@
 	}
   header('Content-Type: application/json');
   $url = $_POST['url'];
-  $riot_api_response = file_get_contents($url.'api_key=2acd6cf6-044b-4af9-ac13-f9c796708d15');
+  $riot_api_response = file_get_contents($url.'api_key=0481fc25-e803-4cbb-9ba5-02ca7c391b96');
   $result = json_decode($riot_api_response, true);
   $result['response'] = getResponseCodeFromHeaders($http_response_header);
   print_r(json_encode($result));
