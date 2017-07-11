@@ -60,7 +60,7 @@ function getChampionImg(championID) {
  */
 function getChampions() {
   post(
-    'https://na1.api.riotgames.com/lol/static-data/v3/champions?champData=image&dataById=true&',
+    'https://na1.api.riotgames.com/lol/static-data/v3/champions?tags=image&dataById=true&',
     function(data) {
       if(data['response'] == 200) {
         app.version = data['version'];
